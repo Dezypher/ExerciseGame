@@ -47,14 +47,15 @@ function CheckValues () {
 					currSeconds = interval;
 			} else {
 				if (!started)
-						started = true;
+					started = true;
 					success = false;
 					failed = false;
 					resting = false;
 					canGetPoint = true;
 					currSeconds = amtSeconds;
 					amtDone++;
-				}
 			}
 		}
 	}
+}
+
