@@ -24,6 +24,8 @@ public class GameLogic : MonoBehaviour {
 
 	public bool started = false;
 
+	public string exerciseID;
+
 	void Update () {
 		currSeconds -= Time.deltaTime;
 
@@ -33,12 +35,7 @@ public class GameLogic : MonoBehaviour {
 
 		if (!done) {
 			if (Input.GetButtonDown ("DebugWin") && canGetPoint) {
-				points++;
-				success = true;
-				canGetPoint = false;
-				currSeconds = 0;
-
-				CalculateStars ();
+				GetPoint ();
 			}
 
 			if (currSeconds <= 0) {
@@ -59,6 +56,17 @@ public class GameLogic : MonoBehaviour {
 					amtDone++;
 				}
 			}
+		}
+	}
+
+	public void GetPoint() {
+		if (canGetPoint) {
+			points++;
+			success = true;
+			canGetPoint = false;
+			currSeconds = 0;
+
+			CalculateStars ();
 		}
 	}
 
