@@ -32,7 +32,10 @@ public class Prompt : MonoBehaviour {
 					text.text = "" + time;
 			}
 		} else {
-			text.text = "FINISHED!";
+			if (!gameLogic.gameCompleted)
+				text.text = "FINISHED!";
+			else
+				text.text = "EXERCISE SET COMPLETED!";
 		}
 	}
 }
