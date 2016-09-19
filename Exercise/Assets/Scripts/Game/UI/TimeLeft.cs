@@ -14,7 +14,7 @@ public class TimeLeft : MonoBehaviour {
 		int time = Mathf.CeilToInt(gameLogic.currSeconds);
 
 		if (gameLogic.canGetPoint)
-			text.text = "Time Left: " + time;
+			text.text = time + "s";
 		else
 			text.text = "";
 	}

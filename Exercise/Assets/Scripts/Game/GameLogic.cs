@@ -49,6 +49,8 @@ public class GameLogic : MonoBehaviour {
 	void Awake() {
 		settings = ((GameObject)Resources.Load ("StageSettings")).GetComponent<StageSettings> ();
 		scoreRecorder = GameObject.Find ("ScoreRecorder").GetComponent<ScoreRecorder> ();
+
+		LoadStageSettings (settings.stageSettings [nextStage]);
 	}
 
 	void Update () {
@@ -60,7 +62,6 @@ public class GameLogic : MonoBehaviour {
 
 		if (!done) {
 			currSeconds -= Time.deltaTime;
-			elapsedTime += Time.deltaTime;
 
 			if (debugging) {
 				if (Input.GetButton ("DebugWin")) {
@@ -75,16 +76,19 @@ public class GameLogic : MonoBehaviour {
 
 				if (timeHeld >= holdTime) {
 					GetPoint ();
+					amtDone++;
 					timeHeld = 0;
 				}
-			} else
-				timeHeld = 0;
+			}
 
 
 			if (currSeconds <= 0) {
 				if (!resting) {
-					if (!success)
+					if (!success) {
 						failed = true;
+						if(started)
+							amtDone++;
+					}
 					resting = true;
 					canGetPoint = false;
 					currSeconds = interval;
@@ -96,8 +100,11 @@ public class GameLogic : MonoBehaviour {
 					resting = false;
 					canGetPoint = true;
 					currSeconds = amtSeconds;
-					amtDone++;
 				}
+			}
+
+			if (canGetPoint) {
+				elapsedTime += Time.deltaTime;
 			}
 		} else {
 			currSeconds -= Time.deltaTime;
