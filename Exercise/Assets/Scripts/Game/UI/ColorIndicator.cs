@@ -3,6 +3,9 @@ using System.Collections;
 
 public class ColorIndicator : MonoBehaviour {
 
+	public Color colorActive;
+	public Color colorInactive;
+
 	private GameLogic gameLogic;
 	private UnityEngine.UI.Image image;
 
@@ -16,17 +19,9 @@ public class ColorIndicator : MonoBehaviour {
 		Color color = new Color ();
 
 		if (gameLogic.isDoingExercise) {
-			color.r = 0.1f;
-			color.g = 0.6f;
-			color.b = 0.1f;
-			color.a = 1f;
+			image.color = colorActive;
 		} else {
-			color.r = 0.6f;
-			color.g = 0.1f;
-			color.b = 0.1f;
-			color.a = 1f;
+			image.color = colorInactive;
 		}
-
-		image.color = color;
 	}
 }
