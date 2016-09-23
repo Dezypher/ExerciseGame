@@ -1,0 +1,21 @@
+# Blender MTL File: 'terrain.blend'
+# Material Count: 2
+
+newmtl River
+Ns 13.725490
+Ka 0.000000 0.000000 0.000000
+Kd 0.030916 0.129126 0.230637
+Ks 0.012500 0.012500 0.012500
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Terrain
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd /Users/ccs/ExerciseGame/blenderfiles/TerrainTexture.png

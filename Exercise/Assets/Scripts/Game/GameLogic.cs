@@ -38,6 +38,8 @@ public class GameLogic : MonoBehaviour {
 
 	public bool gameCompleted = false;
 
+	public int scene;
+
 	public GameObject resultPanel;
 	public ResultText resultScore;
 	public ResultText resultTime;
@@ -130,7 +132,14 @@ public class GameLogic : MonoBehaviour {
 		if (nextStage != -1) {
 			// Fade In
 
+			int thisScene = scene;
+
 			LoadStageSettings (settings.stageSettings [nextStage]);
+
+			if (thisScene != scene) { 
+				UnityEngine.SceneManagement.SceneManager.LoadScene (scene);
+			}
+
 			done = false;
 			// Fade Out
 
@@ -171,6 +180,7 @@ public class GameLogic : MonoBehaviour {
 		holdTime = settings.holdTime;
 		doAmt = settings.doAmt;
 		nextStage = settings.nextStageIndex;
+		scene = settings.sceneIndex;
 	}
 
 	public void GetPoint() {

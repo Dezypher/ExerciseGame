@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{EF8FB97D-271D-5D2E-8554-98AC9A9B41B7}") = "Exercise", "Assembly-CSharp-firstpass.csproj", "{F8FB9D91-C24B-4E7A-8259-D0C99C5BEE17}"
+EndProject
 Project("{EF8FB97D-271D-5D2E-8554-98AC9A9B41B7}") = "Exercise", "Assembly-CSharp.csproj", "{4881A259-A9FF-CE51-EBA7-B85BBBF6B073}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8FB9D91-C24B-4E7A-8259-D0C99C5BEE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8FB9D91-C24B-4E7A-8259-D0C99C5BEE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8FB9D91-C24B-4E7A-8259-D0C99C5BEE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8FB9D91-C24B-4E7A-8259-D0C99C5BEE17}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4881A259-A9FF-CE51-EBA7-B85BBBF6B073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4881A259-A9FF-CE51-EBA7-B85BBBF6B073}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4881A259-A9FF-CE51-EBA7-B85BBBF6B073}.Release|Any CPU.ActiveCfg = Release|Any CPU

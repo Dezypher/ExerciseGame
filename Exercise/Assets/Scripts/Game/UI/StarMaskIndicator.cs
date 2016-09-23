@@ -8,6 +8,7 @@ public class StarMaskIndicator : MonoBehaviour {
 	public float finalWidth;
 
 	public void Start() {
+		gameLogic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
 		rect = GetComponent<RectTransform> ();
 	}
 

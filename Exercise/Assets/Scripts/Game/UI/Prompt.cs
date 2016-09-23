@@ -16,7 +16,9 @@ public class Prompt : MonoBehaviour {
 		if (!gameLogic.done) {
 			if (gameLogic.started) {
 				if (!gameLogic.resting && gameLogic.canGetPoint) {
-					text.text = "GO!";
+					if ((gameLogic.amtSeconds - gameLogic.currSeconds) < 1)
+						text.text = "GO!";
+					else text.text = "";
 				} else if (gameLogic.success) {
 					text.text = "GOOD JOB!";
 				} else if (gameLogic.failed) {
