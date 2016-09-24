@@ -22,6 +22,8 @@ public class ArduinoConnector : MonoBehaviour {
 	private SerialPort stream;
 
 	public void Start() {
+		logic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
+
 		Open ();
 	}	
 

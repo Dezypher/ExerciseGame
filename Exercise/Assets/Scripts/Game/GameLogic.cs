@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameLogic : MonoBehaviour {
 
-	public bool done = false;
+	public bool done = true;
 	public int points;
 	public int totalPoints;
 
@@ -40,11 +40,13 @@ public class GameLogic : MonoBehaviour {
 
 	public int scene;
 
+	public bool pauseLogic = true;
+
 	public GameObject resultPanel;
 	public ResultText resultScore;
 	public ResultText resultTime;
 
-	private bool bufferNextStage = false;
+	private bool bufferNextStage = true;
 	private StageSettings settings;
 	private ScoreRecorder scoreRecorder;
 
@@ -56,67 +58,69 @@ public class GameLogic : MonoBehaviour {
 	}
 
 	void Update () {
-		if (amtDone == doAmt && !bufferNextStage) {
-			done = true;
-			bufferNextStage = true;
-			currSeconds = 3;
-		}
-
-		if (!done) {
-			currSeconds -= Time.deltaTime;
-
-			if (debugging) {
-				if (Input.GetButton ("DebugWin")) {
-					isDoingExercise = true;
-				} else {
-					isDoingExercise = false;
-				}
+		if (!pauseLogic) {		
+			if (amtDone == doAmt && !bufferNextStage) {
+				done = true;
+				bufferNextStage = true;
+				currSeconds = 3;
 			}
 
-			if (isDoingExercise && canGetPoint) {
-				timeHeld += Time.deltaTime;
+			if (!done) {
+				currSeconds -= Time.deltaTime;
 
-				if (timeHeld >= holdTime) {
-					GetPoint ();
-					amtDone++;
-					timeHeld = 0;
-				}
-			}
-
-
-			if (currSeconds <= 0) {
-				if (!resting) {
-					if (!success) {
-						failed = true;
-						if(started)
-							amtDone++;
+				if (debugging) {
+					if (Input.GetButton ("DebugWin")) {
+						isDoingExercise = true;
+					} else {
+						isDoingExercise = false;
 					}
-					resting = true;
-					canGetPoint = false;
-					currSeconds = interval;
-				} else {
-					if (!started)
-						started = true;
-					success = false;
-					failed = false;
-					resting = false;
-					canGetPoint = true;
-					currSeconds = amtSeconds;
 				}
-			}
 
-			if (canGetPoint) {
-				elapsedTime += Time.deltaTime;
-			}
-		} else {
-			currSeconds -= Time.deltaTime;
+				if (isDoingExercise && canGetPoint) {
+					timeHeld += Time.deltaTime;
 
-			if (currSeconds <= 0) {
-				currSeconds = 0;
+					if (timeHeld >= holdTime) {
+						GetPoint ();
+						amtDone++;
+						timeHeld = 0;
+					}
+				}
 
-				resultPanel.SetActive (true);
-				resultScore.Display ();
-				resultTime.Display ();
+
+				if (currSeconds <= 0) {
+					if (!resting) {
+						if (!success) {
+							failed = true;
+							if (started)
+								amtDone++;
+						}
+						resting = true;
+						canGetPoint = false;
+						currSeconds = interval;
+					} else {
+						if (!started)
+							started = true;
+						success = false;
+						failed = false;
+						resting = false;
+						canGetPoint = true;
+						currSeconds = amtSeconds;
+					}
+				}
+
+				if (canGetPoint) {
+					elapsedTime += Time.deltaTime;
+				}
+			} else {
+				currSeconds -= Time.deltaTime;
+
+				if (currSeconds <= 0) {
+					currSeconds = 0;
+
+					resultPanel.SetActive (true);
+					resultScore.Display ();
+					resultTime.Display ();
+				}
 			}
 		}
 	}
@@ -139,11 +143,8 @@ public class GameLogic : MonoBehaviour {
 			if (thisScene != scene) { 
 				UnityEngine.SceneManagement.SceneManager.LoadScene (scene);
 			}
-
-			done = false;
 			// Fade Out
 
-			bufferNextStage = false;
 
 		} else {
 
@@ -151,6 +152,11 @@ public class GameLogic : MonoBehaviour {
 
 			// Load score screen
 		}
+	}
+
+	public void StartStage() {
+		done = false;
+		bufferNextStage = false;
 	}
 
 	public void Reset() {
