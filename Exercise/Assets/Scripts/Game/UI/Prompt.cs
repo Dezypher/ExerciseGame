@@ -13,31 +13,35 @@ public class Prompt : MonoBehaviour {
 	void Update () {
 		int time = Mathf.CeilToInt(gameLogic.currSeconds);
 
-		if (!gameLogic.done) {
-			if (gameLogic.started) {
-				if (!gameLogic.resting && gameLogic.canGetPoint) {
-					if ((gameLogic.amtSeconds - gameLogic.currSeconds) < 1)
-						text.text = "GO!";
-					else text.text = "";
-				} else if (gameLogic.success) {
-					text.text = "GOOD JOB!";
-				} else if (gameLogic.failed) {
-					text.text = "TOO BAD!";
+		if (!gameLogic.pauseLogic) {
+			if (!gameLogic.done) {
+				if (gameLogic.started) {
+					if (!gameLogic.resting && gameLogic.canGetPoint) {
+						if ((gameLogic.amtSeconds - gameLogic.currSeconds) < 1)
+							text.text = "GO!";
+						else
+							text.text = "";
+					} else if (gameLogic.success) {
+						text.text = "GOOD JOB!";
+					} else if (gameLogic.failed) {
+						text.text = "TOO BAD!";
+					}
+
+					if (time <= 3)
+						text.text = "" + time;
+				} else {
+					text.text = "READY";
+
+					if (time <= 3)
+						text.text = "" + time;
 				}
-
-				if (time <= 3)
-					text.text = "" + time;
 			} else {
-				text.text = "READY";
-
-				if (time <= 3)
-					text.text = "" + time;
+				if (!gameLogic.gameCompleted)
+					text.text = "FINISHED!";
+				else
+					text.text = "EXERCISE SET COMPLETED!";
 			}
-		} else {
-			if (!gameLogic.gameCompleted)
-				text.text = "FINISHED!";
-			else
-				text.text = "EXERCISE SET COMPLETED!";
-		}
+		} else
+			text.text = "";
 	}
 }

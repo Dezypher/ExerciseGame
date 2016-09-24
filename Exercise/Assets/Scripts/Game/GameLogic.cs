@@ -46,6 +46,8 @@ public class GameLogic : MonoBehaviour {
 	public ResultText resultScore;
 	public ResultText resultTime;
 
+	public GameObject canvas;
+
 	private bool bufferNextStage = true;
 	private StageSettings settings;
 	private ScoreRecorder scoreRecorder;
@@ -53,6 +55,7 @@ public class GameLogic : MonoBehaviour {
 	void Awake() {
 		settings = ((GameObject)Resources.Load ("StageSettings")).GetComponent<StageSettings> ();
 		scoreRecorder = GameObject.Find ("ScoreRecorder").GetComponent<ScoreRecorder> ();
+		canvas = GameObject.Find ("Canvas");
 
 		LoadStageSettings (settings.stageSettings [nextStage]);
 	}
@@ -128,6 +131,8 @@ public class GameLogic : MonoBehaviour {
 	public void LoadNextStage() {
 		// Either Fade In and Out or do Cutscene
 
+		pauseLogic = true;
+
 		// Save Score
 		scoreRecorder.AddScore(points, elapsedTime);
 
@@ -157,6 +162,7 @@ public class GameLogic : MonoBehaviour {
 	public void StartStage() {
 		done = false;
 		bufferNextStage = false;
+		pauseLogic = false;
 	}
 
 	public void Reset() {
@@ -187,6 +193,18 @@ public class GameLogic : MonoBehaviour {
 		doAmt = settings.doAmt;
 		nextStage = settings.nextStageIndex;
 		scene = settings.sceneIndex;
+
+		//Instantiate TUTORIAL
+
+		GameObject tutorial = (GameObject) Instantiate (settings.tutorial, canvas.transform);
+
+		Vector3 newScale = tutorial.transform.localScale;
+
+		newScale.x = 1;
+		newScale.y = 1;
+		newScale.z = 1;
+
+		tutorial.transform.localScale = newScale;
 	}
 
 	public void GetPoint() {

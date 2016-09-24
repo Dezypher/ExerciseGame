@@ -12,6 +12,8 @@ public class StageSetting {
 	public string exerciseID;
 	public int sceneIndex;
 
+	public GameObject tutorial;
+
 	public int nextStageIndex;
 }
 
