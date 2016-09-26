@@ -17,7 +17,7 @@ public class ResultText : MonoBehaviour {
 
 	public void Display() {
 		if (type == ResultType.Score) {
-			text.text = gameLogic.points + "/" + gameLogic.totalPoints;
+			text.text = gameLogic.CalculateScore() + "/100";
 		} else if (type == ResultType.Time) {
 			text.text = ((int) gameLogic.elapsedTime) + " seconds";
 		}

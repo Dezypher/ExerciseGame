@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum ExerciseType {Hold, Many};
+	
 public class GameLogic : MonoBehaviour {
 
 	public bool done = true;
@@ -42,10 +44,13 @@ public class GameLogic : MonoBehaviour {
 
 	public bool pauseLogic = true;
 
+	public ExerciseType exerciseType;
+
+	//UI Variables
+
 	public GameObject resultPanel;
 	public ResultText resultScore;
 	public ResultText resultTime;
-
 	public GameObject canvas;
 
 	private bool bufferNextStage = true;
@@ -134,7 +139,7 @@ public class GameLogic : MonoBehaviour {
 		pauseLogic = true;
 
 		// Save Score
-		scoreRecorder.AddScore(points, 0, elapsedTime);
+		scoreRecorder.AddScore(CalculateScore(), 100, elapsedTime);
 
 		// Check if this is the last stage for the exercise set
 
@@ -169,7 +174,9 @@ public class GameLogic : MonoBehaviour {
 
 	public void Reset() {
 		points = 0;
+
 		currSeconds = 0;
+
 		timeHeld = 0;
 		amtDone = 0;
 		stars = 0;
@@ -206,6 +213,9 @@ public class GameLogic : MonoBehaviour {
 		newScale.y = 1;
 		newScale.z = 1;
 
+		UnityEngine.RectTransform rectTransform = tutorial.GetComponent<UnityEngine.RectTransform> ();
+
+		rectTransform.localPosition = new Vector2 (0, 0);
 		tutorial.transform.localScale = newScale;
 	}
 
@@ -214,10 +224,24 @@ public class GameLogic : MonoBehaviour {
 			points++;
 			success = true;
 			canGetPoint = false;
-			currSeconds = 0;
+
+			if(exerciseType == ExerciseType.Hold)
+				currSeconds = 0;
 
 			CalculateStars ();
 		}
+	}
+
+	public int CalculateScore() {
+		float score = 0;
+
+		if (exerciseType == ExerciseType.Hold) {
+			score = Mathf.Ceil((amtSeconds - elapsedTime) / (amtSeconds - holdTime) * 100);
+		} else if (exerciseType == ExerciseType.Many) {
+			score = amtDone / doAmt * 100;
+		}
+
+		return (int) score;
 	}
 
 	public void CalculateStars() {
