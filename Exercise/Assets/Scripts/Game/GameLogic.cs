@@ -134,7 +134,7 @@ public class GameLogic : MonoBehaviour {
 		pauseLogic = true;
 
 		// Save Score
-		scoreRecorder.AddScore(points, elapsedTime);
+		scoreRecorder.AddScore(points, 0, elapsedTime);
 
 		// Check if this is the last stage for the exercise set
 
@@ -156,6 +156,8 @@ public class GameLogic : MonoBehaviour {
 			gameCompleted = true;
 
 			// Load score screen
+
+			UnityEngine.SceneManagement.SceneManager.LoadScene (2);
 		}
 	}
 

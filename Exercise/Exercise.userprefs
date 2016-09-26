@@ -1,14 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/GameLogic.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/StartExercise.cs">
     <Files>
-      <File FileName="Assets/Scripts/Game/GameHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Game/GameLogic.cs" Line="139" Column="19" />
+      <File FileName="Assets/Scripts/SceneSpecific/Superhero/1 - Superman/SupermanAnimator.cs" Line="4" Column="48" />
+      <File FileName="Assets/Scripts/Game/GameLogic.cs" Line="188" Column="12" />
       <File FileName="Assets/Scripts/Game/UI/ProgressBar.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/UI/ColorIndicator.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/UI/TimeLeft.cs" Line="10" Column="74" />
-      <File FileName="Assets/Scripts/Game/UI/Points.cs" Line="9" Column="17" />
+      <File FileName="Assets/Scripts/Game/UI/Points.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Game/UI/StarMaskIndicator.cs" Line="11" Column="74" />
+      <File FileName="Assets/Scripts/Game/UI/Prompt.cs" Line="45" Column="19" />
+      <File FileName="Assets/Scripts/SceneSpecific/Superhero/1 - Superman/SupermanClouds.cs" Line="22" Column="29" />
+      <File FileName="Assets/Scripts/Settings/StageSettings.cs" Line="23" Column="2" />
+      <File FileName="Assets/Scripts/Game/StartExercise.cs" Line="16" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Game\ScoreRecorder.cs" />
      <Compile Include="Assets\Scripts\Game\StartExercise.cs" />
      <Compile Include="Assets\Scripts\Game\UI\ColorIndicator.cs" />
+     <Compile Include="Assets\Scripts\Game\UI\FinalResults.cs" />
      <Compile Include="Assets\Scripts\Game\UI\Points.cs" />
      <Compile Include="Assets\Scripts\Game\UI\ProgressBar.cs" />
      <Compile Include="Assets\Scripts\Game\UI\Prompt.cs" />
