@@ -1,0 +1,1907 @@
+fileFormatVersion: 2
+guid: a48d7cdda23844e899064b86edef3630
+timeCreated: 1474952894
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature.002
+    100002: Cube.000
+    100004: Cube.001
+    100006: Head
+    100008: Head_end
+    100010: Head_end_end
+    100012: Left_Fingers_1
+    100014: Left_Fingers_1_end
+    100016: Left_Fingers_1_end_end
+    100018: Left_Fingers_2
+    100020: Left_Fingers_3
+    100022: Left_Fingers_4
+    100024: Left_Hand
+    100026: Left_IndexFinger_1
+    100028: Left_IndexFinger_1_end
+    100030: Left_IndexFinger_1_end_end
+    100032: Left_IndexFinger_2
+    100034: Left_IndexFinger_3
+    100036: Left_IndexFinger_4
+    100038: Left_LowerArm
+    100040: Left_LowerLeg
+    100042: Left_LowerLeg_end
+    100044: Left_LowerLeg_end_end
+    100046: Left_Shoulder
+    100048: Left_Thumb_1
+    100050: Left_Thumb_1_end
+    100052: Left_Thumb_1_end_end
+    100054: Left_Thumb_2
+    100056: Left_Thumb_3
+    100058: Left_UpperArm
+    100060: Left_UpperLeg
+    100062: //RootNode
+    100064: Neck
+    100066: Right_Fingers_1
+    100068: Right_Fingers_1_end
+    100070: Right_Fingers_1_end_end
+    100072: Right_Fingers_2
+    100074: Right_Fingers_3
+    100076: Right_Fingers_4
+    100078: Right_Hand
+    100080: Right_IndexFinger_1
+    100082: Right_IndexFinger_1_end
+    100084: Right_IndexFinger_1_end_end
+    100086: Right_IndexFinger_2
+    100088: Right_IndexFinger_3
+    100090: Right_IndexFinger_4
+    100092: Right_LowerArm
+    100094: Right_LowerLeg
+    100096: Right_LowerLeg_end
+    100098: Right_LowerLeg_end_end
+    100100: Right_Shoulder
+    100102: Right_Thumb_1
+    100104: Right_Thumb_1_end
+    100106: Right_Thumb_1_end_end
+    100108: Right_Thumb_2
+    100110: Right_Thumb_3
+    100112: Right_UpperArm
+    100114: Right_UpperLeg
+    100116: Root
+    100118: Spine1
+    100120: Spine2
+    100122: Spine3
+    100124: TailBone
+    400000: Armature.002
+    400002: Cube.000
+    400004: Cube.001
+    400006: Head
+    400008: Head_end
+    400010: Head_end_end
+    400012: Left_Fingers_1
+    400014: Left_Fingers_1_end
+    400016: Left_Fingers_1_end_end
+    400018: Left_Fingers_2
+    400020: Left_Fingers_3
+    400022: Left_Fingers_4
+    400024: Left_Hand
+    400026: Left_IndexFinger_1
+    400028: Left_IndexFinger_1_end
+    400030: Left_IndexFinger_1_end_end
+    400032: Left_IndexFinger_2
+    400034: Left_IndexFinger_3
+    400036: Left_IndexFinger_4
+    400038: Left_LowerArm
+    400040: Left_LowerLeg
+    400042: Left_LowerLeg_end
+    400044: Left_LowerLeg_end_end
+    400046: Left_Shoulder
+    400048: Left_Thumb_1
+    400050: Left_Thumb_1_end
+    400052: Left_Thumb_1_end_end
+    400054: Left_Thumb_2
+    400056: Left_Thumb_3
+    400058: Left_UpperArm
+    400060: Left_UpperLeg
+    400062: //RootNode
+    400064: Neck
+    400066: Right_Fingers_1
+    400068: Right_Fingers_1_end
+    400070: Right_Fingers_1_end_end
+    400072: Right_Fingers_2
+    400074: Right_Fingers_3
+    400076: Right_Fingers_4
+    400078: Right_Hand
+    400080: Right_IndexFinger_1
+    400082: Right_IndexFinger_1_end
+    400084: Right_IndexFinger_1_end_end
+    400086: Right_IndexFinger_2
+    400088: Right_IndexFinger_3
+    400090: Right_IndexFinger_4
+    400092: Right_LowerArm
+    400094: Right_LowerLeg
+    400096: Right_LowerLeg_end
+    400098: Right_LowerLeg_end_end
+    400100: Right_Shoulder
+    400102: Right_Thumb_1
+    400104: Right_Thumb_1_end
+    400106: Right_Thumb_1_end_end
+    400108: Right_Thumb_2
+    400110: Right_Thumb_3
+    400112: Right_UpperArm
+    400114: Right_UpperLeg
+    400116: Root
+    400118: Spine1
+    400120: Spine2
+    400122: Spine3
+    400124: TailBone
+    4300000: Cube.001
+    4300002: Cube.000
+    7400000: Armature.002|Armature.002|Armature.002|superman_fly|Armature.002|superman_fl
+    7400002: Armature.002|Armature.002|Armature.002|superman_idle|Armature.002|superman_i
+    7400004: Armature.002|Cube.000|Cube.000|superman_idle|Cube.000|superman_idle
+    7400006: Armature.002|Hammer_HitLeft
+    7400008: Armature.002|Hammer_HitRight
+    7400010: Armature.002|Hammer_Idle
+    7400012: Armature.002|Plank
+    7400014: Armature.002|Plank_Idle
+    7400016: Armature.002|SidePlank_L
+    7400018: Armature.002|SidePlankFull_R
+    7400020: Cube.000|Cube.000|Cube.000|superman_idle|Cube.000|superman_idle
+    9500000: //RootNode
+    13700000: Cube.000
+    13700002: Cube.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature.002|Armature.002|Armature.002|superman_fly|Armature.002|superman_fl
+      takeName: Armature.002|Armature.002|Armature.002|superman_fly|Armature.002|superman_fl
+      firstFrame: 0
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|Armature.002|Armature.002|superman_idle|Armature.002|superman_i
+      takeName: Armature.002|Armature.002|Armature.002|superman_idle|Armature.002|superman_i
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|Cube.000|Cube.000|superman_idle|Cube.000|superman_idle
+      takeName: Armature.002|Cube.000|Cube.000|superman_idle|Cube.000|superman_idle
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|Hammer_HitLeft
+      takeName: Armature.002|Hammer_HitLeft
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|Hammer_HitRight
+      takeName: Armature.002|Hammer_HitRight
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|Hammer_Idle
+      takeName: Armature.002|Hammer_Idle
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|Plank
+      takeName: Armature.002|Plank
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|Plank_Idle
+      takeName: Armature.002|Plank_Idle
+      firstFrame: 0
+      lastFrame: 101
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|SidePlank_L
+      takeName: Armature.002|SidePlank_L
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.002|SidePlankFull_R
+      takeName: Armature.002|SidePlankFull_R
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cube.000|Cube.000|Cube.000|superman_idle|Cube.000|superman_idle
+      takeName: Cube.000|Cube.000|Cube.000|superman_idle|Cube.000|superman_idle
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.002
+        weight: 1
+      - path: Armature.002/Root
+        weight: 1
+      - path: Armature.002/Root/Spine1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Fingers_4/Left_Fingers_3/Left_Fingers_2/Left_Fingers_1/Left_Fingers_1_end/Left_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_IndexFinger_4/Left_IndexFinger_3/Left_IndexFinger_2/Left_IndexFinger_1/Left_IndexFinger_1_end/Left_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Thumb_3/Left_Thumb_2/Left_Thumb_1/Left_Thumb_1_end/Left_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Neck/Head/Head_end/Head_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Fingers_4/Right_Fingers_3/Right_Fingers_2/Right_Fingers_1/Right_Fingers_1_end/Right_Fingers_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_IndexFinger_4/Right_IndexFinger_3/Right_IndexFinger_2/Right_IndexFinger_1/Right_IndexFinger_1_end/Right_IndexFinger_1_end_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end
+        weight: 1
+      - path: Armature.002/Root/Spine1/Spine2/Spine3/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Thumb_3/Right_Thumb_2/Right_Thumb_1/Right_Thumb_1_end/Right_Thumb_1_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Left_UpperLeg/Left_LowerLeg/Left_LowerLeg_end/Left_LowerLeg_end_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end
+        weight: 1
+      - path: Armature.002/Root/TailBone/Right_UpperLeg/Right_LowerLeg/Right_LowerLeg_end/Right_LowerLeg_end_end
+        weight: 1
+      - path: Cube.000
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

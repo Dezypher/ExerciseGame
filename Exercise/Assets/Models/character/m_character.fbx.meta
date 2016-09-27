@@ -59,6 +59,15 @@ ModelImporter:
     100102: Spine2
     100104: Spine3
     100106: TailBone
+    100108: Head_end_end
+    100110: Left_Fingers_1_end_end
+    100112: Left_IndexFinger_1_end_end
+    100114: Left_LowerLeg_end_end
+    100116: Left_Thumb_1_end_end
+    100118: Right_Fingers_1_end_end
+    100120: Right_IndexFinger_1_end_end
+    100122: Right_LowerLeg_end_end
+    100124: Right_Thumb_1_end_end
     400000: Armature.002
     400002: Cube.000
     400004: Cube.001
@@ -113,6 +122,15 @@ ModelImporter:
     400102: Spine2
     400104: Spine3
     400106: TailBone
+    400108: Head_end_end
+    400110: Left_Fingers_1_end_end
+    400112: Left_IndexFinger_1_end_end
+    400114: Left_LowerLeg_end_end
+    400116: Left_Thumb_1_end_end
+    400118: Right_Fingers_1_end_end
+    400120: Right_IndexFinger_1_end_end
+    400122: Right_LowerLeg_end_end
+    400124: Right_Thumb_1_end_end
     4300000: Cube.001
     4300002: Cube.000
     7400000: Armature.002|superman_fly
