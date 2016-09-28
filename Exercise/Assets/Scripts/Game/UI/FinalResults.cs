@@ -14,6 +14,9 @@ public class FinalResults : MonoBehaviour {
 		scoreRecorder = GameObject.Find ("ScoreRecorder").GetComponent<ScoreRecorder> ();
 
 		DisplayResults ();
+
+		Destroy (GameObject.Find ("GameHandler"));
+		Destroy (GameObject.Find ("Canvas"));
 	}
 
 	void DisplayResults() {

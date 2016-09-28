@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum ExerciseType {Hold, Many};
+public enum ExerciseType {Hold, Many, Custom};
 	
 public class GameLogic : MonoBehaviour {
 
@@ -76,24 +76,25 @@ public class GameLogic : MonoBehaviour {
 			if (!done) {
 				currSeconds -= Time.deltaTime;
 
-				if (debugging) {
-					if (Input.GetButton ("DebugWin")) {
-						isDoingExercise = true;
-					} else {
-						isDoingExercise = false;
+				if (exerciseType != ExerciseType.Custom) {
+					if (debugging) {
+						if (Input.GetButton ("DebugWin")) {
+							isDoingExercise = true;
+						} else {
+							isDoingExercise = false;
+						}
+					}
+
+					if (isDoingExercise && canGetPoint) {
+						timeHeld += Time.deltaTime;
+
+						if (timeHeld >= holdTime) {
+							GetPoint ();
+							amtDone++;
+							timeHeld = 0;
+						}
 					}
 				}
-
-				if (isDoingExercise && canGetPoint) {
-					timeHeld += Time.deltaTime;
-
-					if (timeHeld >= holdTime) {
-						GetPoint ();
-						amtDone++;
-						timeHeld = 0;
-					}
-				}
-
 
 				if (currSeconds <= 0) {
 					if (!resting) {
@@ -123,6 +124,8 @@ public class GameLogic : MonoBehaviour {
 				currSeconds -= Time.deltaTime;
 
 				if (currSeconds <= 0) {
+					bufferNextStage = true;
+
 					currSeconds = 0;
 
 					resultPanel.SetActive (true);
@@ -202,6 +205,7 @@ public class GameLogic : MonoBehaviour {
 		doAmt = settings.doAmt;
 		nextStage = settings.nextStageIndex;
 		scene = settings.sceneIndex;
+		exerciseType = settings.exerciseType;
 
 		//Instantiate TUTORIAL
 
@@ -222,11 +226,14 @@ public class GameLogic : MonoBehaviour {
 	public void GetPoint() {
 		if (canGetPoint) {
 			points++;
-			success = true;
-			canGetPoint = false;
 
-			if(exerciseType == ExerciseType.Hold)
-				currSeconds = 0;
+			if (exerciseType != ExerciseType.Custom) {
+				success = true;
+				canGetPoint = false;
+
+				if (exerciseType == ExerciseType.Hold)
+					currSeconds = 0;
+			}
 
 			CalculateStars ();
 		}
