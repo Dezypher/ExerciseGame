@@ -52,10 +52,13 @@ public class GameLogic : MonoBehaviour {
 	public ResultText resultScore;
 	public ResultText resultTime;
 	public GameObject canvas;
+	public UnityEngine.UI.Image fade;
 
 	private bool bufferNextStage = true;
 	private StageSettings settings;
 	private ScoreRecorder scoreRecorder;
+
+	private bool fading = false;
 
 	void Awake() {
 		settings = ((GameObject)Resources.Load ("StageSettings")).GetComponent<StageSettings> ();
@@ -138,17 +141,25 @@ public class GameLogic : MonoBehaviour {
 
 	public void LoadNextStage() {
 		// Either Fade In and Out or do Cutscene
-
+		fading = true;
 		pauseLogic = true;
 
+		StartCoroutine (FadeOut());
+		StartCoroutine (InitiateLoading ());
+		StartCoroutine (FadeIn ());
+	}
+
+	public IEnumerator InitiateLoading() {
+		while (fading)
+			yield return null;
+
 		// Save Score
-		scoreRecorder.AddScore(CalculateScore(), 100, elapsedTime);
+		if(exerciseType != ExerciseType.Custom)
+			scoreRecorder.AddScore(CalculateScore(), 100, elapsedTime);
 
 		// Check if this is the last stage for the exercise set
 
 		if (nextStage != -1) {
-			// Fade In
-
 			int thisScene = scene;
 
 			LoadStageSettings (settings.stageSettings [nextStage]);
@@ -156,9 +167,6 @@ public class GameLogic : MonoBehaviour {
 			if (thisScene != scene) { 
 				UnityEngine.SceneManagement.SceneManager.LoadScene (scene);
 			}
-			// Fade Out
-
-
 		} else {
 
 			gameCompleted = true;
@@ -167,12 +175,51 @@ public class GameLogic : MonoBehaviour {
 
 			UnityEngine.SceneManagement.SceneManager.LoadScene (2);
 		}
+
+	}
+
+	public IEnumerator FadeOut() {
+		for (float i = 0; i < 1; i += 0.01f) {
+			Color color = fade.color;
+			color.a = i;
+			fade.color = color;
+
+			yield return new WaitForSeconds (0.001f);
+		}
+
+		Color color2 = fade.color;
+		color2.a = 1;
+		fade.color = color2;
+
+		fading = false;
+	}
+
+
+	public IEnumerator FadeIn() {
+		while (fading)
+			yield return null;
+		
+		for (float i = 1; i > 0; i -= 0.01f) {
+			Color color = fade.color;
+			color.a = i;
+			fade.color = color;
+
+			yield return new WaitForSeconds (0.001f);
+		}
+
+		Color color2 = fade.color;
+		color2.a = 0;
+		fade.color = color2;
 	}
 
 	public void StartStage() {
 		done = false;
 		bufferNextStage = false;
 		pauseLogic = false;
+	}
+
+	public void CustomScore(int score, int maxScore) {
+		resultScore.Display (score, maxScore);
 	}
 
 	public void Reset() {
@@ -243,7 +290,7 @@ public class GameLogic : MonoBehaviour {
 		float score = 0;
 
 		if (exerciseType == ExerciseType.Hold) {
-			score = Mathf.Ceil((amtSeconds - elapsedTime) / (amtSeconds - holdTime) * 100);
+			score = Mathf.Ceil ((amtSeconds - elapsedTime) / (amtSeconds - holdTime) * 100);
 		} else if (exerciseType == ExerciseType.Many) {
 			score = amtDone / doAmt * 100;
 		}

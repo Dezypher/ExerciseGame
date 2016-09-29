@@ -12,6 +12,6 @@ public class Points : MonoBehaviour {
 	}
 
 	void Update () {
-		text.text = gameLogic.points + " POINTS (" + gameLogic.amtDone + "/" + gameLogic.doAmt + ")";
+		text.text = gameLogic.points + " PTS (" + gameLogic.amtDone + "/" + gameLogic.doAmt + ")";
 	}
 }

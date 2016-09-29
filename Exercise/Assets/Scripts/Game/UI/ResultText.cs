@@ -22,4 +22,8 @@ public class ResultText : MonoBehaviour {
 			text.text = ((int) gameLogic.elapsedTime) + " seconds";
 		}
 	}
+
+	public void Display(int score, int maxScore) {
+		text.text = score + "/" + maxScore;
+	}
 }	

@@ -17,6 +17,7 @@ public class FinalResults : MonoBehaviour {
 
 		Destroy (GameObject.Find ("GameHandler"));
 		Destroy (GameObject.Find ("Canvas"));
+		Destroy (GameObject.Find ("CanvasFade"));
 	}
 
 	void DisplayResults() {
@@ -36,7 +37,5 @@ public class FinalResults : MonoBehaviour {
 
 		score.text = sumScore + "/" + sumScoreMax;
 		time.text = sumTimeSeconds + " seconds";
-
-
 	}
 }

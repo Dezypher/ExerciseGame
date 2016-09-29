@@ -70,7 +70,6 @@ public class ArduinoConnector : MonoBehaviour {
 		}
 	}
 
-
 	public IEnumerator AsynchronousReadFromArduino(Action<string> callback, Action fail = null, float timeout = float.PositiveInfinity)
 	{
 		DateTime initialTime = DateTime.Now;

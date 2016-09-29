@@ -14,6 +14,8 @@ public class PlayerGlacial : MonoBehaviour {
 	public bool doingLeft = false;
 	public bool doingRight = false;
 
+	public UnityEngine.UI.Image pain;
+
 	private Animator animator;
 	private SpawnIceMonster spawnIceMonster;
 
@@ -21,52 +23,55 @@ public class PlayerGlacial : MonoBehaviour {
 	private bool enableRight = true;
 
 	private GameLogic gameLogic;
+	private ScoreRecorder scoreRecorder;
 
 	void Awake() {
 		animator = GetComponent<Animator> ();
 
 		spawnIceMonster = GameObject.Find ("Spawner").GetComponent<SpawnIceMonster> ();
-
 		gameLogic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
+		scoreRecorder = GameObject.Find ("ScoreRecorder").GetComponent<ScoreRecorder> ();
 	}
 
 	void Update() {
-		if (spawnIceMonster.aliveLeft && enableLeft) {
-			if (Input.GetKey (KeyCode.A) && !spawnIceMonster.monsterLeft.GetComponent<IceMonster> ().notInPosition) {
-				leftHeld += Time.deltaTime;
+		if (!gameLogic.done && !gameLogic.pauseLogic) {
+			if (spawnIceMonster.aliveLeft && enableLeft) {
+				if (Input.GetKey (KeyCode.A) && !spawnIceMonster.monsterLeft.GetComponent<IceMonster> ().notInPosition) {
+					leftHeld += Time.deltaTime;
 
-				doingLeft = true;
-			} else {
-				doingLeft = false;
+					doingLeft = true;
+				} else {
+					doingLeft = false;
 
-				if (leftHeld > 0)
-					leftHeld -= Time.deltaTime;
-				else
-					leftHeld = 0;
+					if (leftHeld > 0)
+						leftHeld -= Time.deltaTime;
+					else
+						leftHeld = 0;
+				}
 			}
-		}
 
-		if (spawnIceMonster.aliveRight && enableRight) {
-			if (Input.GetKey (KeyCode.D) && !spawnIceMonster.monsterRight.GetComponent<IceMonster> ().notInPosition) {
-				rightHeld += Time.deltaTime;
+			if (spawnIceMonster.aliveRight && enableRight) {
+				if (Input.GetKey (KeyCode.D) && !spawnIceMonster.monsterRight.GetComponent<IceMonster> ().notInPosition) {
+					rightHeld += Time.deltaTime;
 
-				doingRight = true;
-			} else {
-				doingRight = false;
+					doingRight = true;
+				} else {
+					doingRight = false;
 
-				if (rightHeld > 0)
-					rightHeld -= Time.deltaTime;
-				else
-					rightHeld = 0;
+					if (rightHeld > 0)
+						rightHeld -= Time.deltaTime;
+					else
+						rightHeld = 0;
+				}
 			}
-		}
 
-		if (leftHeld >= leftHoldAmt) {
-			StartCoroutine(Attack (0));
-		}
+			if (leftHeld >= leftHoldAmt) {
+				StartCoroutine (Attack (0));
+			}
 
-		if (rightHeld >= rightHoldAmt) {
-			StartCoroutine(Attack (1));
+			if (rightHeld >= rightHoldAmt) {
+				StartCoroutine (Attack (1));
+			}
 		}
 	}
 
@@ -93,17 +98,23 @@ public class PlayerGlacial : MonoBehaviour {
 			enableRight = true;
 		}
 
-		gameLogic.GetPoint ();
+		gameLogic.points += 10;
 		gameLogic.amtDone++;
+
+		if (gameLogic.amtDone == gameLogic.doAmt) {
+			scoreRecorder.AddScore (gameLogic.points, 100, gameLogic.elapsedTime);
+			gameLogic.CustomScore (gameLogic.points, 100);
+		}
 	}
 
 	public void Damage () {
-		hitPoints--;
+		if (gameLogic.points > 0)
+			gameLogic.points -= 10;
 
-		if (hitPoints <= 0) {
-			// Handle loss
-			gameLogic.done = true;
-			gameLogic.currSeconds = 3;
-		}
+		Color color = pain.color;
+
+		color.a = 0.5f;
+
+		pain.color = color;
 	}
 }

@@ -32,6 +32,7 @@ public class SpawnIceMonster : MonoBehaviour {
 	public bool effectOn;
 
 	private GameLogic gameLogic;
+	private ScoreRecorder scoreRecorder;
 
 	void Start() {
 		//Instantiate initial interval
@@ -40,6 +41,7 @@ public class SpawnIceMonster : MonoBehaviour {
 		spawnTimerRight = Random.Range (0, 3);
 
 		gameLogic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
+		scoreRecorder = GameObject.Find ("ScoreRecorder").GetComponent<ScoreRecorder> ();
 	}
 
 	// Update is called once per frame
