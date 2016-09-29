@@ -1,19 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game\DisableDrawOnStart.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SceneSpecific\Superhero\2 - Forest\PlankAnimation.cs">
     <Files>
-      <File FileName="Assets\Scripts\SceneSpecific\Superhero\1 - Superman\SupermanAnimator.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\GameLogic.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\UI\ProgressBar.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\UI\ColorIndicator.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\UI\TimeLeft.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\UI\Points.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\UI\StarMaskIndicator.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\UI\Prompt.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SceneSpecific\Superhero\1 - Superman\SupermanClouds.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Settings\StageSettings.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\StartExercise.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\DisableDrawOnStart.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneSpecific\Superhero\4 - Glacial\ProgressBarGlacial.cs" Line="24" Column="68" />
+      <File FileName="Assets\Scripts\SceneSpecific\Superhero\4 - Glacial\ColorIndicatorGlacial.cs" Line="49" Column="33" />
+      <File FileName="Assets\Scripts\Game\UI\ProgressBar.cs" Line="4" Column="43" />
+      <File FileName="Assets\Scripts\Game\UI\ColorIndicator.cs" Line="28" Column="1" />
+      <File FileName="Assets\Scripts\SceneSpecific\Superhero\4 - Glacial\PlayerGlacial.cs" Line="105" Column="26" />
+      <File FileName="Assets\Scripts\SceneSpecific\Superhero\4 - Glacial\SpawnIceMonster.cs" Line="40" Column="41" />
+      <File FileName="Assets\Scripts\Game\GameLogic.cs" Line="127" Column="29" />
+      <File FileName="Assets\Scripts\Game\UI\FinalResults.cs" Line="19" Column="40" />
+      <File FileName="Assets\Scripts\SceneSpecific\Superhero\2 - Forest\PlankAnimation.cs" Line="18" Column="40" />
+      <File FileName="Assets\Scripts\SceneSpecific\Superhero\1 - Skies\SupermanAnimator.cs" Line="4" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
