@@ -36,6 +36,6 @@ public class FinalResults : MonoBehaviour {
 		}
 
 		score.text = sumScore + "/" + sumScoreMax;
-		time.text = sumTimeSeconds + " seconds";
+		time.text = Mathf.Floor(sumTimeSeconds) + " seconds";
 	}
 }

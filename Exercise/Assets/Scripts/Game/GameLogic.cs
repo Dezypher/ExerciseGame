@@ -23,6 +23,7 @@ public class GameLogic : MonoBehaviour {
 
 	public bool resting = false;
 	public bool canGetPoint = true;
+	public bool hasToReset = false;
 
 	public bool success = false;
 	public bool failed = false;
@@ -54,6 +55,8 @@ public class GameLogic : MonoBehaviour {
 	public GameObject canvas;
 	public UnityEngine.UI.Image fade;
 
+	public bool overrideInput = false;
+
 	private bool bufferNextStage = true;
 	private StageSettings settings;
 	private ScoreRecorder scoreRecorder;
@@ -80,7 +83,7 @@ public class GameLogic : MonoBehaviour {
 				currSeconds -= Time.deltaTime;
 
 				if (exerciseType != ExerciseType.Custom) {
-					if (debugging) {
+					if (debugging && !overrideInput) {
 						if (Input.GetButton ("DebugWin")) {
 							isDoingExercise = true;
 						} else {
@@ -96,6 +99,11 @@ public class GameLogic : MonoBehaviour {
 							amtDone++;
 							timeHeld = 0;
 						}
+					}
+
+					if (hasToReset && !isDoingExercise) {
+						hasToReset = false;
+						canGetPoint = true;
 					}
 				}
 
@@ -275,7 +283,11 @@ public class GameLogic : MonoBehaviour {
 			points++;
 
 			if (exerciseType != ExerciseType.Custom) {
-				success = true;
+				if (exerciseType != ExerciseType.Many) {
+					success = true;
+				} else
+					hasToReset = true;
+
 				canGetPoint = false;
 
 				if (exerciseType == ExerciseType.Hold)
@@ -291,6 +303,7 @@ public class GameLogic : MonoBehaviour {
 
 		if (exerciseType == ExerciseType.Hold) {
 			score = Mathf.Ceil ((amtSeconds - elapsedTime) / (amtSeconds - holdTime) * 100);
+			//score = Mathf.Ceil ((timeHeld / holdTime) * 100);
 		} else if (exerciseType == ExerciseType.Many) {
 			score = amtDone / doAmt * 100;
 		}

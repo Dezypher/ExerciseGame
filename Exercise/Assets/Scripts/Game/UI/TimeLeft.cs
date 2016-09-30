@@ -3,8 +3,8 @@ using System.Collections;
 
 public class TimeLeft : MonoBehaviour {
 
-	public GameLogic gameLogic;
-	public UnityEngine.UI.Text text; 
+	private GameLogic gameLogic;
+	private UnityEngine.UI.Text text; 
 
 	void Start () {
 		gameLogic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
@@ -14,7 +14,7 @@ public class TimeLeft : MonoBehaviour {
 	void Update () {
 		int time = Mathf.CeilToInt(gameLogic.currSeconds);
 
-		if (gameLogic.canGetPoint)
+		if (gameLogic.canGetPoint || gameLogic.exerciseType == ExerciseType.Many)
 			text.text = time + "s";
 		else
 			text.text = "";
