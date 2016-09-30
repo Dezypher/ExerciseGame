@@ -179,7 +179,7 @@ public class GameLogic : MonoBehaviour {
 	}
 
 	public IEnumerator FadeOut() {
-		for (float i = 0; i < 1; i += 0.01f) {
+		for (float i = 0; i < 1; i += 0.025f) {
 			Color color = fade.color;
 			color.a = i;
 			fade.color = color;
@@ -199,7 +199,7 @@ public class GameLogic : MonoBehaviour {
 		while (fading)
 			yield return null;
 		
-		for (float i = 1; i > 0; i -= 0.01f) {
+		for (float i = 1; i > 0; i -= 0.05f) {
 			Color color = fade.color;
 			color.a = i;
 			fade.color = color;

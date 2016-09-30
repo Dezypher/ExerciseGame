@@ -28,6 +28,7 @@ public class SpawnIceMonster : MonoBehaviour {
 	public float intervalMax;
 
 	public GameObject explosionEffect;
+	public GameObject deathEffect;
 
 	public bool effectOn;
 
@@ -91,10 +92,14 @@ public class SpawnIceMonster : MonoBehaviour {
 	public void Kill(int side) {
 		switch (side) {
 		case 0:
+			if(effectOn)
+				Instantiate (explosionEffect, monsterLeft.transform.position, explosionEffect.transform.rotation);
 			Destroy (monsterLeft);
 			aliveLeft = false;
 			break;
 		case 1:
+			if(effectOn)
+				Instantiate (explosionEffect, monsterRight.transform.position, explosionEffect.transform.rotation);
 			Destroy (monsterRight);
 			aliveRight = false;
 			break;
