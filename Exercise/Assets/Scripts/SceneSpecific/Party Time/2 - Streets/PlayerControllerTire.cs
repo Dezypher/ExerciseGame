@@ -2,9 +2,7 @@
 using System.Collections;
 
 public class PlayerControllerTire : MonoBehaviour {
-
-	public int hitPoints;
-
+	
 	public float leftHeld = 0;
 	public float rightHeld = 0;
 

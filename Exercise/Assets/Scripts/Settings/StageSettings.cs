@@ -9,7 +9,7 @@ public class StageSetting {
 	public float interval;
 	public float holdTime;
 	public int doAmt;
-	public string exerciseID;
+	public string[] exerciseIDs;
 	public int sceneIndex;
 	public ExerciseType exerciseType;
 

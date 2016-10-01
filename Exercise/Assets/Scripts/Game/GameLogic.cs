@@ -30,7 +30,7 @@ public class GameLogic : MonoBehaviour {
 
 	public bool started = false;
 
-	public string exerciseID;
+	public string[] exerciseIDs;
 
 	public bool isDoingExercise = false;
 	public bool debugging;
@@ -61,12 +61,15 @@ public class GameLogic : MonoBehaviour {
 	private StageSettings settings;
 	private ScoreRecorder scoreRecorder;
 
+	private ArduinoConnector arduinoConnector;
+
 	private bool fading = false;
 
 	void Awake() {
 		settings = ((GameObject)Resources.Load ("StageSettings")).GetComponent<StageSettings> ();
 		scoreRecorder = GameObject.Find ("ScoreRecorder").GetComponent<ScoreRecorder> ();
 		canvas = GameObject.Find ("Canvas");
+		arduinoConnector = GameObject.Find ("Arduino Connection").GetComponent<ArduinoConnector> ();
 
 		LoadStageSettings (settings.stageSettings [nextStage]);
 	}
@@ -89,6 +92,13 @@ public class GameLogic : MonoBehaviour {
 						} else {
 							isDoingExercise = false;
 						}
+					}
+
+					if (exerciseIDs.Length > 0) {
+						if (arduinoConnector.ExerciseAlive (exerciseIDs [0]))
+							isDoingExercise = true;
+						else
+							isDoingExercise = false;
 					}
 
 					if (isDoingExercise && canGetPoint) {
@@ -261,6 +271,9 @@ public class GameLogic : MonoBehaviour {
 		nextStage = settings.nextStageIndex;
 		scene = settings.sceneIndex;
 		exerciseType = settings.exerciseType;
+		exerciseIDs = settings.exerciseIDs;
+
+		arduinoConnector.SetExercises (exerciseIDs);
 
 		//Instantiate TUTORIAL
 
