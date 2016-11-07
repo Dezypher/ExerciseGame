@@ -1,13 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Arduino/ArduinoConnector.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SceneSpecific\Escape\1 - OnYourKnees\PlayerOnYourKnees.cs">
     <Files>
-      <File FileName="Assets/Scripts/Game/LeftRightHandler.cs" Line="29" Column="49" />
-      <File FileName="Assets/Scripts/SceneSpecific/Superhero/4 - Glacial/PlayerGlacial.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SceneSpecific/Party Time/2 - Streets/PlayerControllerTire.cs" Line="87" Column="3" />
-      <File FileName="Assets/Scripts/SceneSpecific/Party Time/3 - Chairs/SpotlightControllerChairs.cs" Line="81" Column="1" />
-      <File FileName="Assets/Scripts/Arduino/ArduinoConnector.cs" Line="73" Column="41" />
-      <File FileName="Assets/Scripts/Game/GameLogic.cs" Line="97" Column="52" />
+      <File FileName="Assets\Scripts\Game\GameLogic.cs" Line="112" Column="7" />
+      <File FileName="Assets\Scripts\SceneSpecific\Escape\1 - OnYourKnees\WallSpawner.cs" Line="22" Column="33" />
+      <File FileName="Assets\Scripts\SceneSpecific\Escape\1 - OnYourKnees\WallBehaviour.cs" Line="18" Column="3" />
+      <File FileName="Assets\Scripts\SceneSpecific\Escape\1 - OnYourKnees\PlayerOnYourKnees.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
