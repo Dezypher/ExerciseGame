@@ -13,19 +13,24 @@ public class WallSpawner : MonoBehaviour {
 
 	public int numSpawned;
 
+	private GameLogic gameLogic;
+
 	void Start () { 
-		timeTillNext = Random.Range (intervalMin, intervalMax);
+		timeTillNext = 0;
+		gameLogic = GameObject.Find ("GameHandler").GetComponent <GameLogic>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (numSpawned < numToSpawn) {
-			timeTillNext -= Time.deltaTime;
+		if (gameLogic.started) {
+			if (numSpawned < numToSpawn) {
+				timeTillNext -= Time.deltaTime;
 
-			if (timeTillNext <= 0) {
-				Instantiate (wall, transform.position, transform.rotation);
-				numSpawned++;
-				timeTillNext = Random.Range (intervalMin, intervalMax);
+				if (timeTillNext <= 0) {
+					Instantiate (wall, transform.position, transform.rotation);
+					numSpawned++;
+					timeTillNext = Random.Range (intervalMin, intervalMax);
+				}
 			}
 		}
 	}

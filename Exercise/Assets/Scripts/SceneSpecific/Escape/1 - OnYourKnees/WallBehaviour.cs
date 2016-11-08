@@ -6,7 +6,16 @@ public class WallBehaviour : MonoBehaviour {
 	public float xCoordPlayerPos;
 	public float xCoordDelete;
 	public float speed;
-	
+
+	private bool done = false;
+	private PlayerOnYourKnees player;
+	private GameLogic gameLogic;
+
+	void Start () {
+		player = GameObject.Find ("Player").GetComponent<PlayerOnYourKnees> ();
+		gameLogic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
+	}
+
 	// Update is called once per frame
 	void Update () {
 		transform.position =
@@ -18,6 +27,17 @@ public class WallBehaviour : MonoBehaviour {
 
 		if (transform.position.x <= xCoordDelete) {
 			Destroy (this.gameObject);
+		}
+
+		if (!done) {
+			if (transform.position.x <= xCoordPlayerPos) {
+				if (player.isKneeled) {
+					gameLogic.points++;
+				}
+
+				gameLogic.amtDone++;
+				done = true;
+			}
 		}
 	}
 }
