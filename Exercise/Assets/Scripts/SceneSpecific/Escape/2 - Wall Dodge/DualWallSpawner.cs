@@ -15,15 +15,15 @@ public class DualWallSpawner : MonoBehaviour {
 	private GameLogic gameLogic;
 
 	//To make sure both sides spawn an equal number of walls
-	private int leftSpawned;
-	private int rightSpawned;
+	public int leftSpawned = 0;
+	public int rightSpawned = 0;
 
 	void Start() {
 		gameLogic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
 	}
 
 	void Update () {
-		if (gameLogic.started && !gameLogic.done && amtToSpawn < (leftSpawned + rightSpawned)) {
+		if (gameLogic.started && !gameLogic.done && amtToSpawn > (leftSpawned + rightSpawned)) {
 			currTime -= Time.deltaTime;
 
 			if (currTime <= 0) {
@@ -46,6 +46,8 @@ public class DualWallSpawner : MonoBehaviour {
 						leftSpawned++;
 					}
 				}
+
+				currTime = Random.Range (intervalMin, intervalMax);
 			}
 		}
 	}

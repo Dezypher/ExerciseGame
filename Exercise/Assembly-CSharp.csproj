@@ -68,6 +68,8 @@
      <Compile Include="Assets\Scripts\SceneSpecific\Escape\1 - OnYourKnees\WallBehaviour.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Escape\1 - OnYourKnees\WallSpawner.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\DualWallSpawner.cs" />
+     <Compile Include="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\PlayerWallDodge.cs" />
+     <Compile Include="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\WallDodgeBar.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\WallDodgeBehaviour.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Party Time\1 - Pop the Balloon\PlayerAnimPop.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Party Time\2 - Streets\CameraFollowTire.cs" />
