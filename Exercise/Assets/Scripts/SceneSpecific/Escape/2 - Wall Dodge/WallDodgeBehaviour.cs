@@ -40,8 +40,8 @@ public class WallDodgeBehaviour : MonoBehaviour {
 
 		if (!done) {
 			if (transform.position.x <= xCoordPlayerPos) {
-				if ((player.playerState == PlayerWallDodge.STATE_DODGE_LEFT && side == SIDE_LEFT) ||
-					(player.playerState == PlayerWallDodge.STATE_DODGE_RIGHT && side == SIDE_RIGHT)) {
+				if ((player.playerState == PlayerWallDodge.STATE_DODGE_RIGHT && side == SIDE_LEFT) ||
+					(player.playerState == PlayerWallDodge.STATE_DODGE_LEFT && side == SIDE_RIGHT)) {
 					gameLogic.points++;
 				} else {
 					player.animator.SetTrigger ("Hit");
