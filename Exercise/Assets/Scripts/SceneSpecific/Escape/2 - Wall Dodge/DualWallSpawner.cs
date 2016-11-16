@@ -27,7 +27,7 @@ public class DualWallSpawner : MonoBehaviour {
 			currTime -= Time.deltaTime;
 
 			if (currTime <= 0) {
-				int side = Random.Range (0, 1);
+				int side = Random.Range (0, 2);
 
 				if (side == 0) {
 					if (leftSpawned < amtToSpawn / 2) {
