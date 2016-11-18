@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Arduino\ArduinoConnector.cs" />
+     <Compile Include="Assets\Scripts\Database\DBHandler.cs" />
      <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
      <Compile Include="Assets\Scripts\Game\DisableDrawOnStart.cs" />
      <Compile Include="Assets\Scripts\Game\GameLogic.cs" />
