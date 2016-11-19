@@ -11,6 +11,8 @@ public class StageSetting {
 	public int doAmt;
 	public string[] exerciseIDs;
 	public int sceneIndex;
+	public bool endAfterTimeOut;
+	public bool recordEffortPoints;
 	public ExerciseType exerciseType;
 
 	public GameObject tutorial;

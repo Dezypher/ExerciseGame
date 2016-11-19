@@ -13,7 +13,7 @@ public class StarMaskIndicator : MonoBehaviour {
 	}
 
 	public void Update(){ 
-		float percent = gameLogic.CalculateScore() / 100;
+		float percent = gameLogic.stars;
 
 		rect.sizeDelta = new Vector2(finalWidth * percent, rect.sizeDelta.y);
 	}

@@ -47,6 +47,8 @@ public class GameLogic : MonoBehaviour {
 
 	public ExerciseType exerciseType;
 
+	public bool endAfterTimeOut;
+
 	//UI Variables
 
 	public GameObject resultPanel;
@@ -86,15 +88,18 @@ public class GameLogic : MonoBehaviour {
 				currSeconds -= Time.deltaTime;
 
 				if (exerciseType != ExerciseType.Custom) {
-					if (debugging && !overrideInput) {
-						if (Input.GetButton ("DebugWin")) {
+					bool isDoing = false;
+
+					if (debugging) {
+						if (Input.GetButton ("DebugWin")) { 
 							isDoingExercise = true;
+							isDoing = true;
 						} else {
 							isDoingExercise = false;
 						}
 					}
 
-					if (exerciseIDs.Length > 0) {
+					if (exerciseIDs.Length > 0 && !isDoing) {
 						if (arduinoConnector.ExerciseAlive (exerciseIDs [0]))
 							isDoingExercise = true;
 						else
@@ -107,7 +112,12 @@ public class GameLogic : MonoBehaviour {
 						if (timeHeld >= holdTime) {
 							GetPoint ();
 							amtDone++;
-							timeHeld = 0;
+
+							if (exerciseType != ExerciseType.Hold) {
+								timeHeld = 0;
+							} else {
+								timeHeld = holdTime;
+							}
 						}
 					}
 
@@ -118,24 +128,27 @@ public class GameLogic : MonoBehaviour {
 				}
 
 				if (currSeconds <= 0) {
-					if (!resting) {
-						if (!success) {
-							failed = true;
-							if (started)
-								amtDone++;
+					if (!endAfterTimeOut && !started) {
+						if (!resting) {
+							if (!success) {
+								failed = true;
+								if (started)
+									amtDone++;
+							}
+							resting = true;
+							canGetPoint = false;
+							currSeconds = interval;
+						} else {
+							if (!started)
+								started = true;
+							success = false;
+							failed = false;
+							resting = false;
+							canGetPoint = true;
+							currSeconds = amtSeconds;
 						}
-						resting = true;
-						canGetPoint = false;
-						currSeconds = interval;
-					} else {
-						if (!started)
-							started = true;
-						success = false;
-						failed = false;
-						resting = false;
-						canGetPoint = true;
-						currSeconds = amtSeconds;
-					}
+					} else
+						done = true;
 				}
 
 				if (canGetPoint) {
@@ -272,6 +285,7 @@ public class GameLogic : MonoBehaviour {
 		scene = settings.sceneIndex;
 		exerciseType = settings.exerciseType;
 		exerciseIDs = settings.exerciseIDs;
+		endAfterTimeOut = settings.endAfterTimeOut;
 
 		arduinoConnector.SetExercises (exerciseIDs);
 
@@ -315,8 +329,8 @@ public class GameLogic : MonoBehaviour {
 		float score = 0;
 
 		if (exerciseType == ExerciseType.Hold) {
-			score = Mathf.Ceil ((amtSeconds - elapsedTime) / (amtSeconds - holdTime) * 100);
-			//score = Mathf.Ceil ((timeHeld / holdTime) * 100);
+			//score = Mathf.Ceil ((amtSeconds - elapsedTime) / (amtSeconds - holdTime) * 100);
+			score = Mathf.Ceil ((timeHeld / holdTime) * 100);
 		} else if (exerciseType == ExerciseType.Many) {
 			score = amtDone / doAmt * 100;
 		}
@@ -325,9 +339,13 @@ public class GameLogic : MonoBehaviour {
 	}
 
 	public void CalculateStars() {
-		float pts = (float) points;
-		float tPts = (float) totalPoints;
+		if (exerciseType == ExerciseType.Many) {
+			float pts = (float)points;
+			float tPts = (float)totalPoints;
 
-		stars = (float) (pts / tPts);
+			stars = (float)(pts / tPts);
+		} else if (exerciseType == ExerciseType.Hold) {
+			stars = (float)(timeHeld / holdTime);
+		}
 	}
 }

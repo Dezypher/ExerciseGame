@@ -22,6 +22,7 @@ public class PlayerGlacial : MonoBehaviour {
 	private bool enableLeft = true;
 	private bool enableRight = true;
 
+	private ArduinoConnector arduinoConnector;
 	private GameLogic gameLogic;
 	private ScoreRecorder scoreRecorder;
 
@@ -31,11 +32,26 @@ public class PlayerGlacial : MonoBehaviour {
 		spawnIceMonster = GameObject.Find ("Spawner").GetComponent<SpawnIceMonster> ();
 		gameLogic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
 		scoreRecorder = GameObject.Find ("ScoreRecorder").GetComponent<ScoreRecorder> ();
+		arduinoConnector = GameObject.Find ("Arduino Connection").GetComponent<ArduinoConnector> ();
 	}
 
 	void Update() {
 		if (!gameLogic.done && !gameLogic.pauseLogic) {
 			if (spawnIceMonster.aliveLeft && enableLeft) {
+				if ((Input.GetKey (KeyCode.A) || arduinoConnector.ExerciseAlive(gameLogic.exerciseIDs[0]))
+					&& !spawnIceMonster.monsterLeft.GetComponent<IceMonster> ().notInPosition) {
+					leftHeld += Time.deltaTime;
+
+					doingLeft = true;
+				} else {
+					doingLeft = false;
+
+					if (leftHeld > 0)
+						leftHeld -= Time.deltaTime;
+					else
+						leftHeld = 0;
+				}
+
 				if (Input.GetKey (KeyCode.A) && !spawnIceMonster.monsterLeft.GetComponent<IceMonster> ().notInPosition) {
 					leftHeld += Time.deltaTime;
 
@@ -51,7 +67,8 @@ public class PlayerGlacial : MonoBehaviour {
 			}
 
 			if (spawnIceMonster.aliveRight && enableRight) {
-				if (Input.GetKey (KeyCode.D) && !spawnIceMonster.monsterRight.GetComponent<IceMonster> ().notInPosition) {
+				if ((Input.GetKey (KeyCode.D) || arduinoConnector.ExerciseAlive(gameLogic.exerciseIDs[0]))
+					&& !spawnIceMonster.monsterRight.GetComponent<IceMonster> ().notInPosition) {
 					rightHeld += Time.deltaTime;
 
 					doingRight = true;

@@ -29,10 +29,20 @@ public class ArduinoConnector : MonoBehaviour {
 
 	private SerialPort stream;
 
+	private bool connected = false;
+	public float reconnectTimeout;
+	public float reconnectTime;
+
+	public GameObject warning;
+
 	public ExerciseStatus[] exercises;
 
 	public void Start() {
 		logic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
+
+		if (GameObject.Find ("ArduinoPortFinder") != null) {
+			port = GameObject.Find ("ArduinoPortFinder").GetComponent<ArduinoPort> ().arduinoPort;
+		}
 
 		Open ();
 	}	
@@ -52,6 +62,18 @@ public class ArduinoConnector : MonoBehaviour {
 			else
 				exercises [i].timeAlive = 0;
 		}
+
+		if (!connected) {
+			warning.SetActive (true);
+			if (reconnectTime <= 0) {
+				reconnectTime = reconnectTimeout;
+				Open ();
+			} else {
+				reconnectTime -= Time.deltaTime;
+			}
+		} else
+			warning.SetActive (false);
+
 	}
 
 	public bool ExerciseAlive(string exerciseID) {
@@ -88,11 +110,16 @@ public class ArduinoConnector : MonoBehaviour {
 	}
 
 	public void Open () {
-		// Opens the serial port
-		stream = new SerialPort(port, baudrate);
-		stream.ReadTimeout = 50;
-		stream.Open();
-		//this.stream.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+		try {
+			// Opens the serial port
+			stream = new SerialPort(port, baudrate);
+			stream.ReadTimeout = 50;
+			stream.Open();
+			//this.stream.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+			connected = true;
+		} catch (Exception ex) {
+			reconnectTime = reconnectTimeout;
+		}
 	}
 
 	public void WriteToArduino(string message)
