@@ -73,6 +73,8 @@
      <Compile Include="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\PlayerWallDodge.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\WallDodgeBar.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\WallDodgeBehaviour.cs" />
+     <Compile Include="Assets\Scripts\SceneSpecific\Escape\4 - Climb to Escape\HoldSpawner.cs" />
+     <Compile Include="Assets\Scripts\SceneSpecific\Escape\4 - Climb to Escape\PlayerClimb.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Party Time\1 - Pop the Balloon\PlayerAnimPop.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Party Time\2 - Streets\CameraFollowTire.cs" />
      <Compile Include="Assets\Scripts\SceneSpecific\Party Time\2 - Streets\PlayerControllerTire.cs" />
