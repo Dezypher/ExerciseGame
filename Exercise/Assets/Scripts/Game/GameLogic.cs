@@ -78,6 +78,7 @@ public class GameLogic : MonoBehaviour {
 
 	void Update () {
 		if (!pauseLogic) {		
+			CalculateStars ();
 			if (amtDone == doAmt && !bufferNextStage) {
 				done = true;
 				bufferNextStage = true;
@@ -128,27 +129,26 @@ public class GameLogic : MonoBehaviour {
 				}
 
 				if (currSeconds <= 0) {
-					if (!endAfterTimeOut && !started) {
-						if (!resting) {
-							if (!success) {
-								failed = true;
-								if (started)
-									amtDone++;
-							}
-							resting = true;
-							canGetPoint = false;
-							currSeconds = interval;
-						} else {
-							if (!started)
-								started = true;
-							success = false;
-							failed = false;
-							resting = false;
-							canGetPoint = true;
-							currSeconds = amtSeconds;
-						}
-					} else
+					if (endAfterTimeOut && started) {
 						done = true;
+					} else if (!resting) {
+						if (!success) {
+							failed = true;
+							if (started)
+								amtDone++;
+						}
+						resting = true;
+						canGetPoint = false;
+						currSeconds = interval;
+					} else {
+						if (!started)
+							started = true;
+						success = false;
+						failed = false;
+						resting = false;
+						canGetPoint = true;
+						currSeconds = amtSeconds;
+					}
 				}
 
 				if (canGetPoint) {
@@ -185,8 +185,7 @@ public class GameLogic : MonoBehaviour {
 			yield return null;
 
 		// Save Score
-		if(exerciseType != ExerciseType.Custom)
-			scoreRecorder.AddScore(CalculateScore(), 100, elapsedTime);
+		scoreRecorder.AddScore(CalculateScore(), 100, elapsedTime);
 
 		// Check if this is the last stage for the exercise set
 
@@ -307,7 +306,7 @@ public class GameLogic : MonoBehaviour {
 
 	public void GetPoint() {
 		if (canGetPoint) {
-			points++;
+			points += 10;
 
 			if (exerciseType != ExerciseType.Custom) {
 				if (exerciseType != ExerciseType.Many) {
@@ -331,19 +330,20 @@ public class GameLogic : MonoBehaviour {
 		if (exerciseType == ExerciseType.Hold) {
 			//score = Mathf.Ceil ((amtSeconds - elapsedTime) / (amtSeconds - holdTime) * 100);
 			score = Mathf.Ceil ((timeHeld / holdTime) * 100);
-		} else if (exerciseType == ExerciseType.Many) {
-			score = amtDone / doAmt * 100;
+		} else if (exerciseType == ExerciseType.Many || exerciseType == ExerciseType.Custom) {
+			score = ((float)points/(float)totalPoints) * 100;
 		}
 
 		return (int) score;
 	}
 
 	public void CalculateStars() {
-		if (exerciseType == ExerciseType.Many) {
+		if (exerciseType == ExerciseType.Many || exerciseType == ExerciseType.Custom) {
 			float pts = (float)points;
 			float tPts = (float)totalPoints;
 
-			stars = (float)(pts / tPts);
+			stars = (float)((float)pts / (float)tPts);
+			//Debug.Log ("Stars: " + stars);
 		} else if (exerciseType == ExerciseType.Hold) {
 			stars = (float)(timeHeld / holdTime);
 		}

@@ -14,13 +14,15 @@ public class PlayerAnimPinata : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (!gameLogic.done) {
-			if (wait == false && gameLogic.hasToReset) {
-				wait = true;
-				animator.SetTrigger ("Swing");
-			} else if (wait == true && !gameLogic.hasToReset) {
-				wait = false;
-			}
+		if (wait == false && gameLogic.done) {
+			wait = true;
+			animator.SetTrigger ("Swing");
+		} 
+
+		/*
+		else if (wait == true && !gameLogic.hasToReset) {
+			wait = false;
 		}
+		*/
 	}
 }

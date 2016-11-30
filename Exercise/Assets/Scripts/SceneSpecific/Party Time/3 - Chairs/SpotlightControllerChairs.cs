@@ -32,7 +32,7 @@ public class SpotlightControllerChairs : MonoBehaviour {
 	}
 
 	void Update () {
-		if (!gameLogic.done && !gameLogic.pauseLogic) {
+		if (gameLogic.started && !gameLogic.done && !gameLogic.pauseLogic) {
 			currTime -= Time.deltaTime;
 
 			spotLightLeft.SetActive (left);
@@ -69,6 +69,8 @@ public class SpotlightControllerChairs : MonoBehaviour {
 				if(left) {
 					gameLogic.overrideInput = true;
 					gameLogic.isDoingExercise = true;
+					gameLogic.timeHeld += Time.deltaTime;
+					gameLogic.points = (int) (((float)gameLogic.timeHeld / (float)gameLogic.holdTime) * (float)gameLogic.totalPoints);
 				} else { 
 					gameLogic.overrideInput = false;
 					gameLogic.isDoingExercise = false;
@@ -82,12 +84,18 @@ public class SpotlightControllerChairs : MonoBehaviour {
 				if(right) {
 					gameLogic.overrideInput = true;
 					gameLogic.isDoingExercise = true;
+					gameLogic.timeHeld += Time.deltaTime;
+					gameLogic.points = (int) (((float)gameLogic.timeHeld / (float)gameLogic.holdTime) * (float)gameLogic.totalPoints);
 				} else { 
 					gameLogic.overrideInput = false;
 					gameLogic.isDoingExercise = false;
 				}
 			} else 
 				animator.SetBool ("Left", false);
+
+			if (gameLogic.timeHeld >= gameLogic.holdTime) {
+				gameLogic.amtDone++;
+			}
 		}
 	}
 }

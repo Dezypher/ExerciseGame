@@ -7,6 +7,7 @@ public class Prompt : MonoBehaviour {
 	public UnityEngine.UI.Text text; 
 
 	void Start () {
+		gameLogic = GameObject.Find ("GameHandler").GetComponent<GameLogic> ();
 		text = GetComponent<UnityEngine.UI.Text> ();
 	}
 

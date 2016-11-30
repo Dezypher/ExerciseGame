@@ -32,7 +32,7 @@ public class WallBehaviour : MonoBehaviour {
 		if (!done) {
 			if (transform.position.x <= xCoordPlayerPos) {
 				if (player.isKneeled) {
-					gameLogic.points++;
+					gameLogic.points += 10;
 				} else {
 					player.animator.SetTrigger ("Hit");
 				}

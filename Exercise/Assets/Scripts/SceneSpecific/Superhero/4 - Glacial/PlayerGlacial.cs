@@ -114,14 +114,10 @@ public class PlayerGlacial : MonoBehaviour {
 			spawnIceMonster.Kill (1);
 			enableRight = true;
 		}
+		gameLogic.CustomScore (gameLogic.points, 100);
 
 		gameLogic.points += 10;
 		gameLogic.amtDone++;
-
-		if (gameLogic.amtDone == gameLogic.doAmt) {
-			scoreRecorder.AddScore (gameLogic.points, 100, gameLogic.elapsedTime);
-			gameLogic.CustomScore (gameLogic.points, 100);
-		}
 	}
 
 	public void Damage () {
