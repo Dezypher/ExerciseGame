@@ -1,14 +1,19 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SceneSpecific\Superhero\4 - Glacial\ColorIndicatorGlacial.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Database\DBHandler.cs">
     <Files>
-      <File FileName="Assets\Scripts\SceneSpecific\Escape\4 - Climb to Escape\ClimbBar.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\WallDodgeBar.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SceneSpecific\Escape\4 - Climb to Escape\PlayerClimb.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Arduino\ArduinoConnector.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\GameLogic.cs" Line="73" Column="36" />
-      <File FileName="Assets\Scripts\Game\UI\Prompt.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SceneSpecific\Superhero\4 - Glacial\ColorIndicatorGlacial.cs" Line="18" Column="2" />
+      <File FileName="Assets\Scripts\SceneSpecific\Escape\1 - OnYourKnees\WallBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\PlayerWallDodge.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneSpecific\Escape\2 - Wall Dodge\WallDodgeBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\GameLogic.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\UI\ResultText.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneSpecific\Superhero\4 - Glacial\PlayerGlacial.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneSpecific\Party Time\2 - Streets\PlayerControllerTire.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneSpecific\Party Time\4 - Pinata\PlayerAnimPinata.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneSpecific\Party Time\4 - Pinata\PinataExplode.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneSpecific\Party Time\3 - Chairs\SpotlightControllerChairs.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\ScoreRecorder.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Database\DBHandler.cs" Line="162" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

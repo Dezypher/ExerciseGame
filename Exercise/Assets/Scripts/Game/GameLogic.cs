@@ -36,6 +36,7 @@ public class GameLogic : MonoBehaviour {
 	public bool debugging;
 
 	public int nextStage;
+	public int currStage;
 
 	public float elapsedTime = 0;
 
@@ -185,7 +186,7 @@ public class GameLogic : MonoBehaviour {
 			yield return null;
 
 		// Save Score
-		scoreRecorder.AddScore(CalculateScore(), 100, elapsedTime);
+		scoreRecorder.AddScore(currStage, CalculateScore(), 100, elapsedTime);
 
 		// Check if this is the last stage for the exercise set
 
@@ -280,6 +281,7 @@ public class GameLogic : MonoBehaviour {
 		interval = settings.interval;
 		holdTime = settings.holdTime;
 		doAmt = settings.doAmt;
+		currStage = nextStage;
 		nextStage = settings.nextStageIndex;
 		scene = settings.sceneIndex;
 		exerciseType = settings.exerciseType;
