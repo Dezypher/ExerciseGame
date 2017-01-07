@@ -6,11 +6,12 @@ using System.Data;
 
 public class DBHandler : MonoBehaviour {
 
-	string conn = "URI=file:" + Application.dataPath + "Database/exercise.s3db"; //Path to database.
+	string conn;
 	IDbConnection dbconn;
 	IDataReader reader;
 	IDbCommand dbcmd;
 
+	/*
 	private void ExecuteQuery(string query) {
 		IDbCommand dbcmd = dbconn.CreateCommand();
 		dbcmd.CommandText = query;
@@ -23,43 +24,61 @@ public class DBHandler : MonoBehaviour {
 			Debug.Log( "value= "+value+"  name ="+name+"  random ="+  rand);
 		}
 	}
+	*/
 
 	private void InitializeData() {
-
 		string filepath = Application.persistentDataPath + System.IO.Path.DirectorySeparatorChar + "exercise.s3db";
 
+		Debug.Log ("FilePath: " + filepath);
 
-		if(!System.IO.File.Exists(filepath))
-		{
-			SqliteConnection.CreateFile(filepath);
+		try {
+			if(!System.IO.File.Exists(filepath))
+			{
+				SqliteConnection.CreateFile(filepath);
 
-			conn = "URI=file:" + filepath;
+				conn = "URI=file:" + filepath;
 
-			OpenDB();
+				OpenDB();
 
-			dbcmd=dbconn.CreateCommand();
-			dbcmd.CommandText = 
-				"CREATE TABLE resultset( "
-			+ "id      INT    PRIMARY KEY, "
-			+ "date    STRING, "
-			+ "gameid  INT    NOT NULL "
-			+ ");"
+				dbcmd=dbconn.CreateCommand();
+				dbcmd.CommandText = 
+					"CREATE TABLE resultset( "
+				+ "id      INTEGER PRIMARY KEY AUTOINCREMENT, "
+				+ "date    STRING, "
+				+ "gameid  INTEGER    NOT NULL "
+				+ ");"
 
-			+ "CREATE TABLE results(" +
-			"resultsetid  INT," +
-			"stageid   INT," +
-			"score        INT," +
-			"totalscore   INT," +
-			"time         REAL," +
-			");";
+				+ "CREATE TABLE results(" +
+				"resultsetid  INTEGER," +
+				"stageid      INTEGER," +
+				"score        INTEGER," +
+				"totalscore   INTEGER," +
+				"time         INTEGER" +
+				");" 
+				
+				+"CREATE TABLE progressreport( "
+				+ "id           INTEGER    PRIMARY KEY AUTOINCREMENT, "
+				+ "date         STRING,  "
+				+ "timeGP       INTEGER,     "
+				+ "timeBP       INTEGER,     "
+				+ "timeActv     INTEGER,     "
+				+ "timeInactv   INTEGER,     "
+				+ "timeTotal    INTEGER     "
+				+ ");";
 
-			reader = dbcmd.ExecuteReader();
+				reader = dbcmd.ExecuteReader();
 
-			CloseDB();
-		} else {
+				CloseDB();
+			} else {
 
-			conn = "URI=file:" + filepath;
+				conn = "URI=file:" + filepath;
 
+			}
+
+			Debug.Log("Database initialized with no errors!");
+			Debug.Log("Database path: " + filepath);
+		} catch (Exception ex) {
+			Debug.Log (ex.Message);
 		}
 	}
 
@@ -95,7 +114,7 @@ public class DBHandler : MonoBehaviour {
 			reader = dbcmd.ExecuteReader();
 
 			dbcmd = dbconn.CreateCommand();
-			dbcmd.CommandText = "SELECT MAX(ID) FROM resultset";
+			dbcmd.CommandText = "SELECT MAX(id) FROM resultset";
 			reader = dbcmd.ExecuteReader();
 
 			int resultsetid = 0;
@@ -106,13 +125,13 @@ public class DBHandler : MonoBehaviour {
 
 			for(int i = 0; i < results.Length; i++) {
 				dbcmd = dbconn.CreateCommand();
-				dbcmd.CommandText = "INSERT INTO resultset(resultsetid, stageid, score, totalscore, time) " +
+				dbcmd.CommandText = "INSERT INTO results(resultsetid, stageid, score, totalscore, time) " +
 					"VALUES ("+resultsetid+", "+results[i].stageID+", "+results[i].score+", "+results[i].maxScore+", "+results[i].time+")";
 				reader = dbcmd.ExecuteReader();
 			}
 		} catch (Exception ex) {
 			Debug.Log ("Record Results Exception");
-			Debug.Log (ex.StackTrace);
+			Debug.Log (ex.Message);
 		} finally {
 			CloseDB ();
 		}
@@ -134,14 +153,14 @@ public class DBHandler : MonoBehaviour {
 				result.stageID = reader.GetInt32(0);
 				result.score = reader.GetInt32(1);
 				result.maxScore = reader.GetInt32(2);
-				result.time = reader.GetFloat(3);
+				result.time = reader.GetInt32(3);
 
 				results.Add(result);
 			}
 
 		} catch (Exception ex) {
 			Debug.Log ("Record Results Exception");
-			Debug.Log (ex.StackTrace);
+			Debug.Log (ex.Message);
 		} finally {
 			CloseDB ();
 		}
@@ -153,6 +172,110 @@ public class DBHandler : MonoBehaviour {
 		}
 
 		return stageResults;
+	}
+
+	public int[] GetResultIDsFromDate(DateTime date) {
+		int[] idArray = null;
+
+		try {
+			OpenDB();
+
+			ArrayList ids = new ArrayList();
+
+			string dateTime = date.Year + "-" + date.Month + "-" + date.Day + "-" + date.Hour + "-" + date.Minute;
+
+			dbcmd = dbconn.CreateCommand();
+			dbcmd.CommandText = "SELECT id FROM resultset WHERE date LIKE " +
+						         "'" + date.Year + "-" + date.Month + "-" + date.Day + "-%-%'";
+			reader = dbcmd.ExecuteReader();
+
+			while(reader.Read()) {
+				int id = reader.GetInt32(0);
+
+				ids.Add(id);
+			}
+
+			idArray = new int[ids.Count];
+
+			for(int i = 0; i < ids.Count; i++) {
+				idArray[i] = (int) ids[i];
+			}
+		} catch (Exception ex) {
+			Debug.Log ("Record Results Exception");
+			Debug.Log (ex.Message);
+		} finally {
+			CloseDB ();
+		}
+
+		return idArray;
+	}
+
+	public void InsertProgressReport(ProgressReport report) {
+		try {
+			OpenDB();
+
+			DateTime now = DateTime.Now;
+
+			string dateString = now.Year + "-" + now.Month + "-" + now.Day + "-" + now.Hour + "-" + now.Minute;
+
+			dbcmd = dbconn.CreateCommand();
+			dbcmd.CommandText = "DELETE IF EXISTS FROM progressreport WHERE date LIKE "
+				+ "'" + now.Year + "-" + now.Month + "-" + now.Day + "-%-%'";
+			reader = dbcmd.ExecuteReader();
+
+			dbcmd = dbconn.CreateCommand();
+			dbcmd.CommandText = "INSERT INTO progressreport(date, timeGP, timeBP, timeActv, timeInactv, timeTotal) " +
+				"VALUES ('"+report.date+"', "+report.timeGP+", "+report.timeBP+", "+report.timeActv+", "+report.timeInactv+", "+report.timeTotal+")";
+			reader = dbcmd.ExecuteReader();
+		} catch (Exception ex) {
+			Debug.Log ("Record Results Exception");
+			Debug.Log (ex.Message);
+		} finally {
+			CloseDB ();
+		}
+	}
+
+	public ProgressReport GetProgressReportByDate(DateTime date) {
+		ProgressReport result = null;
+
+		try {
+			OpenDB();
+
+			DateTime now = DateTime.Now;
+
+			dbcmd = dbconn.CreateCommand();
+			dbcmd.CommandText = "SELECT * FROM progressreport WHERE date LIKE "
+				+ "'"+date.Year+"-"+date.Month+"-"+date.Day+"-%-%'"; 
+			reader = dbcmd.ExecuteReader();
+
+			if(reader.Read()) {
+				result = new ProgressReport ();
+
+				string[] dateParts = reader.GetString(1).Split("-".ToCharArray(), StringSplitOptions.None);
+
+				result.date = new DateTime
+					(
+						Int32.Parse(dateParts[0]),
+						Int32.Parse(dateParts[1]),
+						Int32.Parse(dateParts[2]),
+						Int32.Parse(dateParts[3]),
+						Int32.Parse(dateParts[4]),
+						0
+					);
+				result.timeGP     = reader.GetInt32(2);
+				result.timeBP     = reader.GetInt32(3);
+				result.timeActv   = reader.GetInt32(4);
+				result.timeInactv = reader.GetInt32(5);
+				result.timeTotal  = reader.GetInt32(6);
+			}
+		} catch (Exception ex) {
+			Debug.Log ("Record Results Exception");
+			Debug.Log (ex.Message);
+		} finally {
+			CloseDB ();
+		}
+
+		return result;
 	}
 
 	public DateTime GetResultDate(int resultSetID) {

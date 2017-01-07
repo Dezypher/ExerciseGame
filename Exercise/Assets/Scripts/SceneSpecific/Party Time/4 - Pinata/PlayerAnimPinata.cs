@@ -14,7 +14,7 @@ public class PlayerAnimPinata : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (wait == false && gameLogic.done) {
+		if (!wait && gameLogic.done) {
 			wait = true;
 			animator.SetTrigger ("Swing");
 		} 

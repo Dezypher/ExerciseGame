@@ -12,12 +12,14 @@ public class FinalResults : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		scoreRecorder = GameObject.Find ("ScoreRecorder").GetComponent<ScoreRecorder> ();
-
+		
+		scoreRecorder.SaveScore ();
 		DisplayResults ();
 
 		Destroy (GameObject.Find ("GameHandler"));
 		Destroy (GameObject.Find ("Canvas"));
 		Destroy (GameObject.Find ("CanvasFade"));
+		Destroy (GameObject.Find ("Arduino Connection"));
 	}
 
 	void DisplayResults() {

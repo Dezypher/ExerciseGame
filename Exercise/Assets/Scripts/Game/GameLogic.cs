@@ -254,6 +254,7 @@ public class GameLogic : MonoBehaviour {
 	}
 
 	public void Reset() {
+		done = false;
 		points = 0;
 
 		currSeconds = 0;

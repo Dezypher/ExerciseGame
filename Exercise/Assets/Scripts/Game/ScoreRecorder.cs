@@ -5,7 +5,7 @@ public class StageResult {
 	public int stageID;
 	public int score;
 	public int maxScore;
-	public float time;
+	public int time;
 }
 
 public class ScoreRecorder : MonoBehaviour {
@@ -17,14 +17,16 @@ public class ScoreRecorder : MonoBehaviour {
 
 	void Awake() {
 		stageResults = new ArrayList ();
+		dbHandler = GameObject.Find ("DBHandler").GetComponent<DBHandler> ();
 	}
 
 	public void AddScore(int stageID, int score, int maxScore, float time) {
 		StageResult result = new StageResult ();
 
+		result.stageID = stageID;
 		result.score = score;
 		result.maxScore = maxScore;
-		result.time = time;
+		result.time = (int) time;
 
 		stageResults.Add (result);
 
